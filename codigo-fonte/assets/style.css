@@ -1,0 +1,739 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f4f6f9 0%, #ffffff 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.header-conteudo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* ---------- TITULOS ---------- */
+h1, h2 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* ---------- FORMULARIOS ---------- */
+
+#btn-olho {
+  position: absolute;
+  right: 12px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: transparent; 
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  max-width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+form input,
+form select {
+  flex: 1 1 200px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+}
+
+form button {
+  flex: 0 0 auto;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+form button:hover {
+  background-color: #6cb2e1;
+}
+
+.form-busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.form-busca input,
+.form-busca select,
+.form-busca button {
+  height: 42px; 
+}
+
+.linha-busca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* ---------- MENU DO USUÁRIO NO HEADER ---------- */
+
+.menu-usuario-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1010;
+}
+
+.btn-entrar-topo, .btn-cadastrar-topo {
+  text-decoration: none !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-entrar-topo {
+  color: white !important;
+  border: 2px solid #7ecbff;
+  background: transparent;
+}
+
+.btn-entrar-topo:hover {
+  background: #7ecbff;
+  color: white !important;
+}
+
+.btn-cadastrar-topo {
+  color: white !important;
+  border: 2px solid #7ecbff;
+  background: transparent;
+}
+
+.btn-cadastrar-topo:hover {
+  color: white !important;
+  background: #7ecbff;
+  border: 2px solid #7ecbff;
+}
+
+/* Dropdown do Usuário Logado */
+.usuario-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.usuario-dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.usuario-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.usuario-nome-texto {
+  font-size: 14px;
+  font-weight: 600;
+  color: white; 
+}
+
+.dropdown-conteudo {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  padding: 8px;
+  z-index: 1020;
+}
+
+.btn-meu-pefil {
+  display: block;
+  color: #2c3e50 !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn-meu-perfil:hover {
+  background-color: #d7e8f8;
+}
+
+.btn-sair {
+  display: block;
+  color: #dc3545 !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn-sair:hover {
+  background-color: #f8d7da;
+}
+
+/* ---------- BOTÃO CADASTRAR LIVROS ---------- */
+
+.btn-cadastrar-livro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #7ecbff;
+  color: white !important;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-size: 16px;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.btn-cadastrar-livro:hover {
+  background: #6cb2e1;
+}
+
+/* ---------- BOTÃO OPÇOES LISTA DE LEITURA ---------- */
+
+.btn-opcoes {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #576574;
+  color: white !important;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 20px;
+  text-decoration: none !important;
+  font-size: 16px;
+  transition: 0.2s;
+  white-space: nowrap;
+  border: none; 
+  box-shadow: none;
+}
+
+.btn-opcoes:hover {
+  background: #3e4955;
+}
+
+/* ---------- RECOMENDAÇÕES ---------- */
+
+.prateleira-recomendacoes::-webkit-scrollbar {
+  height: 7px;
+}
+.prateleira-recomendacoes::-webkit-scrollbar-track {
+  background: #f5f6fa;
+}
+.prateleira-recomendacoes::-webkit-scrollbar-thumb {
+  background: #576574; /* Cor do seu botão padrão */
+  border-radius: 4px;
+}
+
+.btn-cadastrar-recomendacao{
+  color: white !important;
+  border: 2px solid #7ecbff;
+  background: transparent;
+}
+
+.btn-cadastrar-recomendacao:hover {
+  color: white !important;
+  background: #7ecbff;
+  border: 2px solid #7ecbff;
+}
+
+/* ---------- CARDS ---------- */
+
+.livro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.livro:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- CAPA DO LIVRO ---------- */
+
+.livro-conteudo-flex {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.livro-capa-container {
+  flex: 0 0 150px; 
+  height: 225px;   
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-color: #eaeaea; 
+}
+
+.imagem-capa-livro {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.livro-detalhes-container {
+  flex: 1;
+  position: relative;
+}
+
+.livro-detalhes-container h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 80px; 
+}
+
+.card-recomendado{
+  flex: 0 0 240px; 
+  min-width: 270px; 
+  max-width: 450px; 
+  box-sizing: border-box; 
+  background: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+  padding: 15px; 
+  border: 1px solid #eee; 
+  display: flex; 
+  flex-direction: column; justify-content: space-between;
+}
+
+.card-recomendado:hover{
+  transform: translateY(-3px);;
+}
+
+/* ---------- INFO ---------- */
+
+.info p {
+  margin: 5px 0;
+}
+
+/* ---------- SINOPSE ---------- */
+
+.sinopse {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.btn-sinopse{
+  display: inline-block; 
+  background: #f1f2f6; 
+  color: #57606f; 
+  font-size: 0.8em; 
+  padding: 3px 8px; 
+  border-radius: 20px; 
+  border: none;
+  margin-bottom: 15px;
+}
+
+.btn-sinopse:hover{
+  background: #c6c7cb; 
+}
+
+/* ---------- LINKS GERAIS ---------- */
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- AÇÕES ---------- */
+
+.acoes {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ---------- BOTÃO ACESSAR LISTAS DE LEITURA ---------- */
+
+.btn-acessar-listas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #7ecbff;
+  gap: 8px; 
+  height: 42px;
+}
+
+.icone-botao {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* ---------- ÍCONES DAS LISTAS DE LEITURA ---------- */
+
+h2 img.icone-titulo-lista {
+  width: 24px;         
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle; 
+  margin-right: 8px;   
+}
+
+/* ---------- BOTÕES EDITAR / DELETAR (ADMIN) ---------- */
+
+.btn-editar {
+  position: absolute;
+  top: 15px;
+  right: 50px; 
+  background: transparent; 
+  padding: 0;
+  border: none;
+}
+
+.btn-deletar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent; 
+  padding: 0;
+  border: none;
+}
+
+.icone-acao {
+  width: 22px;  
+  height: 22px;
+  object-fit: contain;
+  opacity: 0.7; 
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  background: transparent;
+}
+
+.icone-acao:hover {
+  opacity: 1; 
+  transform: scale(1.1); 
+}
+
+/* ---------- DROPDOWN INTERNO DA LISTA DE LEITURA ---------- */
+
+.menu-editar-leitura {
+  position: absolute;
+  top: -5px;
+  right: 45px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-editar-leitura summary {
+  font-size: 14px;
+  color: #34495e;
+  font-weight: bold;
+  list-style: none; 
+  padding: 5px 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 4px;
+  background: #f5f6fa;
+}
+
+.menu-editar-leitura summary:hover {
+  background: #dcdde1;
+}
+
+.menu-editar-leitura summary::-webkit-details-marker {
+  display: none;
+}
+
+.opcoes-dropdown-leitura {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 120px;
+}
+
+.opcoes-dropdown-leitura button {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.btn-status-cinza { background-color: #576574 !important; }
+.btn-status-cinza:hover { background-color: #47525e !important; }
+.btn-remover-vermelho { background-color: #ee5253 !important; }
+.btn-remover-vermelho:hover { background-color: #d63031 !important; }
+
+/* ---------- ALERTAS E TOASTS ---------- */
+
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast-alerta {
+  min-width: 280px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  animation: deslizarEntrada 0.4s ease forwards;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.toast-sucesso { background-color: #2ecc71; border-left: 5px solid #27ae60; }
+.toast-erro { background-color: #e74c3c; border-left: 5px solid #c0392b; }
+.toast-sumir { opacity: 0; transform: translateY(20px); }
+
+@keyframes deslizarEntrada {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ---------- MODAIS ---------- */
+
+.modal-confirmacao-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-confirmacao-caixa {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.modal-confirmacao-fundo.mostrar { display: flex; opacity: 1; }
+.modal-confirmacao-fundo.mostrar .modal-confirmacao-caixa { transform: scale(1); }
+.modal-confirmacao-caixa h4 { margin-top: 0; color: #2c3e50; }
+.modal-confirmacao-caixa p { color: #7f8c8d; margin-bottom: 20px; }
+.modal-botoes { display: flex; justify-content: center; gap: 12px; }
+.btn-modal { padding: 10px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+.btn-modal-cancelar { background-color: #dcdde1; color: #2f3640; }
+.btn-modal-cancelar:hover { background-color: #b2bec3; }
+.btn-modal-confirmar { background-color: #ee5253; color: white; }
+.btn-modal-confirmar:hover { background-color: #d63031; }
+
+/* // ============================================ //
+   // SISTEMA INTEGRADO DE RESPONSIVIDADE (MOBILE) //
+   // ============================================ // */
+
+@media (max-width: 768px) {
+  /* 1. Ajustes de Header e Topo */
+  header {
+    flex-direction: column; /* Alinha o título e o menu um embaixo do outro no celular */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .menu-usuario-container {
+    position: static;
+    transform: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dropdown-conteudo {
+    right: 50%;
+    transform: translateX(50%); /* Centraliza o dropdown do usuário no mobile */
+  }
+
+  /* 2. Ajuste dos Formulários de Busca e Filtros */
+  .linha-busca {
+    flex-direction: column; /* Empilha os blocos de busca */
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .linha-busca form {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0;
+  }
+
+  .form-busca-inputs {
+    flex-direction: column; /* Faz os inputs (título, autor, gênero) virarem uma lista vertical */
+    width: 100%;
+  }
+
+  .form-busca-inputs input, 
+  .form-busca-inputs select,
+  .form-busca-inputs button,
+  .btn-acessar-listas {
+    width: 100% !important; /* Faz ocupar a largura inteira do celular, facilitando o toque */
+    box-sizing: border-box;
+  }
+
+  /* 3. Reestruturação Inteligente do Card de Livros */
+  .livro-conteudo-flex {
+    flex-direction: column; /* Joga a foto para cima e o texto para baixo */
+    align-items: center;
+    text-align: center;
+  }
+
+  .livro-capa-container {
+    flex: 0 0 auto;
+    width: 160px;
+    height: 240px;
+    margin-bottom: 10px;
+  }
+
+  .livro-detalhes-container h3 {
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  /* Reposiciona os botões de admin no mobile para não flutuarem soltos */
+  .btn-editar {
+    top: auto;
+    bottom: 15px;
+    right: 55px;
+  }
+
+  .btn-deletar {
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .acoes {
+    justify-content: center; /* Centraliza as ações de adicionar às listas */
+    margin-bottom: 25px; /* Deixa espaço para os ícones do admin embaixo */
+  }
+}
+
+/* ---------- BOTÃO FAVORITOS ---------- */
+.btn-favorito {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto; 
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+  margin-bottom: -40px; 
+}
+
+.btn-favorito:hover {
+  transform: scale(1.2);
+}
+
+.icone-coracao {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
