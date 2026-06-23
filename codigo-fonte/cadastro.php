@@ -9,7 +9,9 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Biblioteca Virtual</title>
     
-    <link rel="stylesheet" href="assets/style.css?v=1010"> 
+    <link rel="stylesheet" href="assets/style.css?v=1010">
+    
+    <link rel="icon" href="assets/favicon.png?v=1">
     
     <style>
         .cadastro-container {
