@@ -90,6 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Meu Perfil - Biblioteca</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/favicon.png?v=1">
     <style>
 
         .perfil-box {
