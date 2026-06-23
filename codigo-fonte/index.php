@@ -12,6 +12,7 @@ require_once "db/conexao.php";
   <meta charset="UTF-8">
   <title>Biblioteca Online</title>
   <link rel="stylesheet" href="assets/style.css?v=1003">
+  <link rel="icon" href="assets/favicon.png?v=1">
 </head>
 <body>
 
