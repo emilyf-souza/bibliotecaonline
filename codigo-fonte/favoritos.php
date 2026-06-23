@@ -59,6 +59,7 @@ $total_paginas = ceil($total_registros / $livros_por_pagina);
   <meta charset="UTF-8">
   <title>Meus Favoritos - Biblioteca</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/favicon.png?v=1">
 </head>
 <body>
 
