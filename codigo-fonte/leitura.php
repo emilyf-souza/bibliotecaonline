@@ -259,6 +259,7 @@ function exibirCardLivroLeitura($livro) {
     <meta charset="UTF-8">
     <title>Minha Lista de Leitura</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/favicon.png?v=1">
     <style>
         .accordion-secao {
             margin-bottom: 20px;
